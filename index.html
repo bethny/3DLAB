@@ -1,0 +1,132 @@
+<!-- HOW TO EDIT THIS PAGE -->
+<!-- GENERAL HTML GUIDELINE: When in doubt, just copy the whole line, including the <bracketed tags>. -->
+<!-- CAROUSEL: Find EDIT CAROUSEL. 
+	If video, copy the existing video code (starting with <video..., ending with </video> and replace the source path. Be sure to have both .webm and .mp4 formats.
+	If image, copy the existing image code (<img src...>) and replace the image path. 
+	NOTE: 3 items maximum in carousel (though this can be changed by going further into the code.-->
+<!-- DESCRIPTION: Find EDIT INTRO SECTION. Edit the following paragraph. -->
+<!-- NEWS: Find EDIT NEWS. Then, copy one of the full entries (starting with <p> and ending with </p>) and modify the date and content. Delete old entries as desired, though not necessary. -->
+
+<!-- To edit other pages, navigate to that page's HTML file (e.g. people.html for the personnel page). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D Information for Perception and Action Lab</title>
+	<link rel="shortcut icon" type="image/png" href="Assets/Images/3Dthumbnail.png"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script type="text/javascript" src="JS/javascript.js"></script>
+	<meta name="keywords" content="brown university, visual cognition, domini" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class='index'>
+	<header>
+		<a href="index.html"><img id='logo' class='image_on' src='Assets/Images/3Dlogo-colors.png'><img id='logo' class='image_off' src='Assets/Images/3Dlogo-colors-anaglyph.png'></a><a href="https://www.brown.edu/"><img id='crest' src='Assets/Images/BrownCrest.png'></a>
+	</header>
+	<nav id='nav-placeholder'>
+		<div class='nav-link'><a href="index.html">h</a></div>
+	</nav>
+	<nav id='main-nav'>
+		<div class='non-full-width nav-container'>
+			<a href="index.html" id='first-link'>home</a>
+			<a href="people.html">people</a>
+			<a href="research.html">research</a>
+			<a href="publications.html">publications</a>
+			<a href="facilities.html">facilities</a>
+			<a href="contact.html" id='last-link'>contact</a>
+		</div>
+	</nav>
+
+	<!-- EDIT CAROUSEL -->
+	<!-- If you want to put in a new clip, ensure that you have it in BOTH .webm and .mp4 formats. You can easily download an add-on to Adobe Premiere to export in .webm. This will ensure cross-browser compatibility.
+		1. Put .webm and .mp4 files in Assets -> Media
+		2. Paste into lines opening with <source src= ...> (one has "here" commented on the side); you can probably just change the title of the clip 
+	I think it'd look best with 3 rotating items, but if you want to add a 4th you'll need to make more changes to the rest of the code.-->
+
+	<div class="carousel">
+		<div class="mySlides fade">
+			<video autoplay="autoplay" muted loop>
+				<source src="Assets/Media/physobj.webm" type="video/webm"> <!-- here -->
+				<source src="Assets/Media/physobj.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="mySlides fade">
+			<video autoplay="au60toplay" muted loop>
+				<source src="Assets/Media/facilities-grasp.webm" type="video/webm">
+				<source src="Assets/Media/facilities-grasp.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="mySlides fade">
+			<video autoplay="autoplay" muted loop>
+				<source src="Assets/Media/3DIPA.webm" type="video/webm">
+				<source src="Assets/Media/3DIPA.mp4" type="video/mp4">
+			</video>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>	
+	<div class='dots'>
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
+	<div class='non-full-width index-container'>
+		<div class='intro'>
+			<!-- EDIT INTRO SECTION -->
+			<!-- Edit text how you usually would. -->
+
+			<h2>Research Highlights</h2>
+			<p>We study how the human visual system processes visual information to allow successful interactions with the environment. Our approach is to combine computational methods and behavioral studies to understand what are the visual features that establish the mapping between vision and action. Contrary to the commonly held assumption that perception and action stem from separate visual mechanisms, we take a fundamentally different view, proposing that perception and action form a coordinated system: Perception informs action about the state of the world and, in turn, action shapes perception by signaling when it is faulty. Through this integrated approach, quite distinct from most investigations on perception and motor control, we seek understanding:</p>
+
+			<p><a href='research.html#3dprop'>The visual encoding of 3D object properties</a>: What are the visual signals that reflect these properties, how are these signals analyzed across disparate viewing conditions, what are the computational mechanisms that model these processes, and how well do these models predict perceptual performance?</p>
+				
+			<p><a href='research.html#visuomotor'>The visuomotor mapping</a>: How is the 3D visual encoding transformed into motor actions? What is the role of feedback during an action?</p>
+				
+			<p><a href='research.html#plasticity'> The plasticity of the motor mapping and visual encoding of 3D information</a>: How do motor actions adapt to faulty visual information? Is it sufficient to change the visuomotor mapping? Or does the very perceptual interpretation of the environment need to be reshaped?</p>
+		</div>
+		<div class='right-column'>
+			<div class='news'>
+				<h2>News</h2>
+				<div class='news-content'>
+					<!-- EDIT NEWS -->
+					<!-- To add a new news item, copy paste one of the existing items and fill in the info. Be sure to copy from the opening <p> tag to the closing </p> tag. -->
+
+					<!-- <p><b>Month dd, yyyy</b><br>SAMPLE NEWS ITEM</p> -->
+
+					<p><b>August 2018</b><br>New publication in <i>Neuropsychologia</i>: <a href='https://www.sciencedirect.com/science/article/pii/S0028393218302860' target='blank'>Transfer of adaptation reveals shared mechanism in grasping and manual estimation</a></p>	
+
+					<p><b>May 26, 2018</b><br>Congratulations to former undergraduate RAs Sholei Croom and Julia Bleier on graduating!</p>
+
+					<p><b>February 5, 2018</b><br>New publication in <i>Experimental Brain Research</i>: <a href='https://link.springer.com/article/10.1007%2Fs00221-018-5186-6' target='blank'>How removing visual information affects grasping movements</a></p>
+
+					<p><b>September 24, 2017</b><br>New publication in <i>Neuropsychologia</i>: <a href='https://www.ncbi.nlm.nih.gov/pubmed/28958908' target="blank">Error correction and spatial generalization in human grasp control</a></p>
+
+					<p><b>September 2017</b><br>The 3DIPA Lab welcomes new graduate students Jovan Kemp and Abdul-Rahim Deeb!</p>
+
+					<p><b>August 29, 2017</b><br>New publication in <i>Psychonomic Bulletin &amp; Review</i>: <a href='https://www.ncbi.nlm.nih.gov/pubmed/28853037' target="blank">Does visuomotor adaptation contribute to illusion-resistant grasping?</a></p>
+
+					<p><b>August 24, 2017</b><br>New publication in <i>Journal of Vision</i>: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28837967" target="blank">Stereovision for action reflects our perceptual experience of distance and depth</a></p>
+
+					<p><b>May 13, 2017</b><br>New publication in <i>Vision Research</i>: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28571701" target="blank">Adaptation effects in grasping the M&uuml;ller-Lyer illusion</a></p>
+					
+				</div>
+				<div class='scroll-fade'>&nbsp;</div>
+			</div>
+			<div class='twitter'>
+				<h2>Twitter</h2>
+				<p>Coming soon!</p>
+				<!-- <a class="twitter-timeline" data-width="350" data-height="350" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/jack?ref_src=twsrc%5Etfw">&nbsp;</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class='non-full-width footer-container'>
+			<div class='ft-link'><a href="https://www.brown.edu/"><img class='footer-img' src='Assets/Images/Brown_horiz.png'></a></div>
+			<div class='ft-link'><a href="http://www.brown.edu/Departments/CLPS/"><img class='footer-img' src='Assets/Images/clps-banner.png'></a></div>
+		</div>
+	</footer>
+</body>
+</html>

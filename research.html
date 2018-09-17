@@ -1,0 +1,120 @@
+<!-- NOTES ON THIS PAGE
+- page section IDs are displaced to accommodate floating navbar 
+- edit text as usual
+- wrap new paragraphs in <p> and </p> tags-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D Information for Perception and Action Lab</title>
+	<link rel="shortcut icon" type="image/png" href="Assets/Images/3Dthumbnail.png"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script type="text/javascript" src="JS/javascript.js"></script>
+	<meta name="keywords" content="brown university, visual cognition, domini" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header><a href="index.html"><img id='logo' class='image_on' src='Assets/Images/3Dlogo-colors.png'><img id='logo' class='image_off' src='Assets/Images/3Dlogo-colors-anaglyph.png'></a><a href="https://www.brown.edu/"><img id='crest' src='Assets/Images/BrownCrest.png'></a></header>
+
+	<nav id='nav-placeholder'>
+		<div class='nav-link'><a href="index.html">h</a></div>
+	</nav>
+	<nav id='main-nav'>
+		<div class='non-full-width nav-container'>
+			<a href="index.html" id='first-link'>home</a>
+			<a href="people.html">people</a>
+			<a href="research.html">research</a>
+			<a href="publications.html">publications</a>
+			<a href="facilities.html">facilities</a>
+			<a href="contact.html" id='last-link'>contact</a>
+		</div>
+	</nav>
+
+	<img id='corner-logo' src='Assets/Images/3D-logo-icon.png'>
+	<a href='research.html'><button id='scroll-button'>&uarr;</button></a>
+
+	
+<!-- FOR A NEW SECTION: begin copying here -->
+	<div class='research-block block-grey'>
+		<h2 id='intro'>Research Philosophy</h2>
+		<div>
+			<p class='para-first para-last'>Our approach regards perception and action as two sides of the same coin, expressing a currency which is not the veridical Euclidean representation of the environment. Studying perception is the first step to revealing how visual information is organized to spring action: Perception presents the action space. Our first mission is therefore to study the <a href='#3dprop'>visual encoding of 3D object properties</a>. The relationship between visual encoding and the unfolding of a motor action, which requires the same 3D properties, is the aim of our second line of research exploring the <a href='#visuomotor'>visuomotor mapping</a>. We believe that perception and the motor mapping are always synergistically updated. Thus, our third mission is to study the <a href='#plasticity'>plasticity of the motor mapping and visual encoding of 3D information</a>.</p>
+		</div>
+	</div>
+	<!-- end copying here -->
+	<div class='research-block block-blue'  id='3dprop'>
+		<div class='block-pair'>
+			<div class='block-text'>
+				<h2>Visual encoding of 3D object properties</h2>
+				<p class='para-first'>How does vision inform the visual system about the three-dimensional structure of the world? What information is important, for a complex organism like human primates, to be able to successfully interact with the surrounding environment?</p>
+
+				<p>A large community of researchers, spanning psychophysicists, cognitive neuroscientists and neuroscientists assume that the goal of the visual system is to reconstruct the Euclidean structure of the world.  All theoretical and empirical efforts are therefore placed in understanding how the brain achieves this goal. Surprisingly, the Euclidean representation assumption is never a topic for debate.</p>
+
+				<p>We argue that the Euclidean representation of objects is neither the goal of the visual system nor a feature of the perceptual space.  Stripping away this hypothesis from the guiding principles of research in human 3D vision, we seek alternative computational models and empirical tests for understanding how the multitude of visual signals shapes our perceptual experience of the 3D world.</p>
+			</div>
+			<div class='block-image'>
+				<img src='Assets/Images/facilities-grasp-2.jpg'>
+				<p class='caption'>Evan grasping something in virtual reality.</p>	
+			</div>
+		</div>
+
+		<p class='citation first'>&mdash; Domini, F., Caudek, C. (2013). Perception and Action Without Veridical Metric Reconstruction: An Affine Approach. In S J. Dickinson Z. Pizlo (Eds.). <i>Shape Perception in Human and Computer Vision</i> (pp. 285-298). Springer London.</p>
+
+		<p id='visuomotor' class='citation para-last'>&mdash; Domini F, Caudek C. <a href="https://www.ncbi.nlm.nih.gov/pubmed/19963200">Matching perceived depth from disparity and from velocity: Modeling and psychophysics.</a> <i>Acta psychologica</i>. 2010; 133(1):81-9.</p>
+	</div>
+
+	<div class='research-block block-grey'>
+		<div class='block-pair'>
+			<div class='block-image'>
+				<video class='video-inset' autoplay="autoplay" muted loop>
+					<source src="Assets/Media/vr-grasp.webm" type="video/webm">
+					<source src="Assets/Media/vr-grasp.mp4" type="video/mp4">
+				</video>
+				<p class='caption'>A graphic of our virtual reality setup.</p>
+			</div>
+			<div class='block-text'>
+				<h2>Visuomotor Mapping</h2>
+				<p class='para-first'>If the visual system is unable to reconstruct the metric properties of the world, how can we grasp objects if we don't know their true size and location?  Is it possible that perceptual distortions are only found in purely perceptual tasks, made by passive observers viewing the stimulus from a static point of view?</p>
+
+				<p>In order to address these questions, we built a complex VR environment where observers can interact with objects located within their personal space. Within this environment the observer's head can be tracked as well as the position of their upper limbs.  Observers can make perceptual judgments about virtual objects, or we can study their behavior when they reach for or grasp these objects.  In addition, they can also feel them, since we built a system of computer-controlled moving parts that can provide haptic feedback.</p>
+
+				<p>This sophisticated system allows us to pursue a new line of research where we study how depth information is used for grasping virtual objects. Instead of only asking perceptual judgments about the 3D structure of an object, we determine how the aperture between finger and thumb is related to the depth of the object at the end of a grasping action.  In recently published studies, we provide converging evidence with what we found with visual tasks.</p>
+			</div>
+			
+		</div>
+
+			<p class='citation first'>&mdash; Campagnoli C, Croom S, Domini F. <a href="https://www.ncbi.nlm.nih.gov/pubmed/28837967">Stereovision for action reflects our perceptual experience of distance and depth.</a>  <i>Journal of vision</i>. 2017; 17(9):21.</p>
+
+			<p id='plasticity' class='citation para-last'>&mdash; Bozzacchi C, Domini F. <a href="https://www.ncbi.nlm.nih.gov/pubmed/26269553">Lack of depth constancy for grasping movements in both virtual and real environments.</a> <i>Journal of neurophysiology</i>. 2015; 114(4):2242-8.</p>
+		</div>
+	</div>
+
+	<div class='research-block block-blue'>
+		<div class='block-pair'>
+			<div class='block-text'>
+				<h2>Plasticity of the motor mapping and visual encoding of 3D information</h2>
+				<p class='para-first'>Perception and action have been traditionally considered as distinct brain functions. This view took hold following a number of paradoxical dissociations between perception and action in healthy and neurologically impaired individuals. We take a fundamentally different view, proposing that these processes work together to form a coordinated system, where perception informs action about the state of the world and, in turn, action signals perception when perception is faulty. We hypothesize that this system works cooperatively, leveraging error signals from sensory feedback when interacting with the environment to modify the state of the motor system when this is sufficient or to change the very perceptual interpretation itself. While error signals have been studied extensively in the sensorimotor adaptation field, advances made here have yet to be extended to develop an integrated framework for how perception and action coordinate adaptive behavior.</p>
+
+				<p>This approach brings together two fields, 3D visual perception and sensorimotor adaptation, to build a comprehensive framework with the potential to transform current understanding of visually guided action.</p>
+			</div>
+			<div class='block-image'>
+				<img src='Assets/Images/Escher.jpg'>
+				<p class='caption'>M.C. Escher's "Drawing Hands" &copy; 2009 The M.C. Escher Company-Holland</p>
+			</div>
+		</div>
+		<p class='citation first'>&mdash; Cesanek E, Domini F. <a href="https://www.ncbi.nlm.nih.govhttps://www.ncbi.nlm.nih.gov/pubmed/28958908">Error correction and spatial generalization in human grasp control.</a> <i>Neuropsychologia</i>. 2017; 106:112-122.</p>
+
+		<p class='citation'>&mdash; Cesanek E, Campagnoli C, Taylor JA, Domini F. <a href="https://www.ncbi.nlm.nih.gov/pubmed/28853037">Does visuomotor adaptation contribute to illusion-resistant grasping?</a> <i>Psychonomic bulletin &amp; review.</i> 2017</p>
+
+		<p class='citation para-last'>&mdash; Volcic R, Fantoni C, Caudek C, Assad JA, Domini F. <a href="https://www.ncbi.nlm.nih.gov/pubmed/24155312">Visuomotor adaptation changes stereoscopic depth perception and tactile discrimination.</a> <i>The Journal of neuroscience: the official journal of the Society for Neuroscience. </i>2013; 33(43):17081-8.</p>
+	</div>
+
+	<footer id='research-footer'>
+		<div class='non-full-width footer-container'>
+			<div class='ft-link'><a href="https://www.brown.edu/"><img class='footer-img' src='Assets/Images/Brown_horiz.png'></a></div>
+			<div class='ft-link'><a href="http://www.brown.edu/Departments/CLPS/"><img class='footer-img' src='Assets/Images/clps-banner.png'></a></div>
+		</div>
+	</footer>
+</body>
+</html>
